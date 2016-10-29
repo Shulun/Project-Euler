@@ -1,4 +1,5 @@
 function res = checkNum(n)
+% Recursive function to count number of digits
 if n <= 20 || n == 30 || n == 40 || n == 50 || n == 60 || n == 70 || n == 80 || n == 90
     switch n
         case 1
