@@ -17,6 +17,7 @@ toc
 %}
 
 % Use Java mehtods to solve this problem
+% which gives the correct answer 648
 tic
 result = java.math.BigDecimal(1);
 for i = 1:100
