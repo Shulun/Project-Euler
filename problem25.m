@@ -15,8 +15,8 @@ ind
 
 % try to use Binet's formula
 % solution formula is derived from
-% n = log_phi((Fn*sqrt(5) + dqrt(5*Fn +/- 4)/2))
-%   = log10((Fn*sqrt(5) + dqrt(5*Fn +/- 4)/2))/log10(phi)
+% n = log_phi((Fn*sqrt(5) + sqrt(5*Fn +/- 4)/2))
+%   = log10((Fn*sqrt(5) + sqrt(5*Fn +/- 4)/2))/log10(phi)
 %   = log10(sqrt(5)*Fn)/log10(phi)
 %   = (log10(Fn) + log10(5)/2)/log10(phi)
 % log10(Fn) represents an estimation of the number of digits
