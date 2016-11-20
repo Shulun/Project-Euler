@@ -2,6 +2,7 @@ close all; clear; clc;
 
 tic
 result = 0;
+% 6*9^5 = 354294
 for i = 2:355000
     sumDig = 0;
     num = i;
