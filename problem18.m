@@ -2,12 +2,12 @@ close all; clear; clc;
 
 tic
 % Get the size of data to construct the data storage matrix
-fid = fopen('data_Problem18.txt');
+fid = fopen('p018_triangle.txt');
 dim = lineCount(fid);
 fclose(fid);
 
 % Construct the data storage matrix
-fid = fopen('data_Problem18.txt');
+fid = fopen('p018_triangle.txt');
 datMat = zeros(dim, dim);
 %{
 count = 0;
