@@ -49,16 +49,3 @@ if ~all(ismember(lst,primes))
 end
 
 bool = 1;
-
-
-
-
-
-
-
-
-
-
-
-
-
