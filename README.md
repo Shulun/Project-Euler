@@ -3,7 +3,7 @@ Here I provide some of my solutions to Project Euler problems in MATLAB. Most so
 
 Software: 
 <hr />
-<img src="https://www.mathworks.com/cmsimages/64848_wl_cc_logo_membrane_2002_wl.gif" alt="MathWorks MATLAB 2013b" width="300px"/>
+<img src="https://www.mathworks.com/cmsimages/64848_wl_cc_logo_membrane_2002_wl.gif" title="MathWorks MATLAB 2013b" width="300px"/>
 
 License:
 <hr />
