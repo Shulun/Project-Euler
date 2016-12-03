@@ -29,7 +29,7 @@ pVal
 toc
 %}
 
-% much faster method using number theory
+% Much faster method using number theory
 % a + b + c = 1000
 % a = m^2 - n^2
 % b = 2*m*n
