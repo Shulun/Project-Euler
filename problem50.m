@@ -44,13 +44,18 @@ for i = 1:n
 end
 
 for i = count:n+1
+    % first two indices will be ignored
+    % since i = 0; -1:-1:1 -> [];
+    % alsoe i = 1; 0:-1:1 -> [];
     for j = i-count-1:-1:1
+        % no point to check from i-1:-1:1 since the 
+        % primeSums' distance is within # of count
         prmNum = primeSum(i) - primeSum(j);
         if prmNum > upper
             break
         end
         if ismember(prmNum,primeNum)
-            count = i - j;
+            count = i - j; % diff represents # of nums between two primeSums
             consecPrm = prmNum;
         end
     end
