@@ -1,5 +1,5 @@
 # Project-Euler
-<p style='text-align: justify;'>Here I provide some of my solutions to Project Euler problems in MATLAB. Most solutions are tested to make sure the runtime is less than 1-2 seconds. MATLAB scripts will have their execution times listed in the commit messages. Please let me know if you know any other more efficient methods to solve those problems or anything I could improve in my codes. Thank you!</p>
+<span style='text-align: justify;'>Here I provide some of my solutions to Project Euler problems in MATLAB. Most solutions are tested to make sure the runtime is less than 1-2 seconds. MATLAB scripts will have their execution times listed in the commit messages. Please let me know if you know any other more efficient methods to solve those problems or anything I could improve in my codes. Thank you!</span>
 
 Software: 
 <hr />
