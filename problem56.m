@@ -34,7 +34,10 @@ toc
 %}
 
 
+% Method 1
 % Use the functions obtained from MATLAB File Exchange
+% It takes 33.0558 sec to execute
+%{
 tic
 addpath('VariablePrecisionIntegers') 
 
@@ -48,4 +51,39 @@ sumfun = @(N) sum(digits(N));
 dsum = cellfun(sumfun,CC);
 %[S,loc] = max2(dsum)
 max(max(dsum))
+toc
+%}
+
+% Method 2
+% Use the BigInteger class from Java with Matlab
+% However this is not much faster, it takes 
+% around 30.0946 sec to execute
+tic
+maxDigSum = 0;
+limit = 100;
+num = java.math.BigInteger(1);
+
+for a = limit-1:-1:1
+    for b = limit-1:-1:1
+        digSum = 0;
+        base = java.math.BigInteger(a);
+        num = base.pow(b);
+        if log10(num.doubleValue())*9 < maxDigSum
+            break
+        end
+        
+        numStr = num.toString();
+        numVal = java.lang.Character('a');
+        
+        n = length(numStr);
+        for i = 0:n-1
+            digSum = digSum + numVal.getNumericValue(numStr.charAt(i));
+        end
+
+        if digSum > maxDigSum
+            maxDigSum = digSum;
+        end
+    end
+end
+maxDigSum
 toc
