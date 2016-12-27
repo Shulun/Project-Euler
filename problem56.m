@@ -58,10 +58,13 @@ toc
 % Use the BigInteger class from Java with Matlab
 % However this is not much faster, it takes 
 % around 30.0946 sec to execute
+% After more fiddling around, the speed is boosted
+% to 17.3833 sec to execute
 tic
 maxDigSum = 0;
 limit = 100;
 num = java.math.BigInteger(1);
+%numVal = java.lang.Character('a');
 
 for a = limit-1:-1:1
     for b = limit-1:-1:1
@@ -73,11 +76,11 @@ for a = limit-1:-1:1
         end
         
         numStr = num.toString();
-        numVal = java.lang.Character('a');
         
         n = length(numStr);
         for i = 0:n-1
-            digSum = digSum + numVal.getNumericValue(numStr.charAt(i));
+            %digSum = digSum + numVal.getNumericValue(numStr.charAt(i));
+            digSum = digSum + numStr.charAt(i) - '0';
         end
 
         if digSum > maxDigSum
